@@ -1,0 +1,344 @@
+html {
+    box-sizing: border-box;
+    /* Reset */
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+
+/* Globales */
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    width: 95%;
+    /* =1200px; */
+    max-width: 120rem;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin: 0 auto;
+}
+
+
+/* Utilidades */
+
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+
+/* Botones */
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-naranja {
+    background-color: #ff9900;
+}
+
+.boton-verde {
+    background-color: #036606;
+}
+
+
+/* Header */
+
+.site-header {
+    background-color: #333333;
+    padding: 1rem 0 2rem 0;
+}
+
+.site-header.inicio {
+    background-image: url(../img/fci-header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.site-header h1 {
+    color: white;
+    /* separacion hacia adentro: */
+    padding-bottom: .5rem;
+    max-width: 60rem;
+    /* interlineado: */
+    line-height: 2;
+    text-shadow: .5rem .5rem 1rem black;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.barra {
+    display: flex;
+    /* posiciona a las etiq. hijas como flexibles y tal */
+    justify-content: space-between;
+    /* permite alinear un contenido a la iz y otro a la der */
+    align-items: center;
+    /* = 3px*/
+    padding-top: 2rem;
+}
+
+.navegacion a {
+    /*valores como: nombre, hexadecimal, RGVA (para transpa),RGV, HSLA (para transpa)*/
+    color: white;
+    text-decoration: none;
+    /* = 18px */
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+
+.navegacion a:hover {
+    color: #ff9900;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+
+/* Seccion: Servicios FCI */
+
+.contenedor-tarjetas-servicios {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contenido-servicioFCI {
+    flex: -40 0 calc(33.3% - 1rem);
+    /*
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: calc(33.3% - 1rem);
+   */
+    /*
+        boder-style: solid;
+        boder-color: #B5B5B5;
+        border-width: 1px;
+    */
+    border: 1px solid #B5B5B5;
+    background: #F5F5F5;
+    padding: 2rem 8rem 2rem 8rem;
+    margin-bottom: 1rem;
+}
+
+.servicio {
+    display: block;
+    align-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+.servicio h3 {
+    color: black;
+    max-width: 100px;
+    margin-top: 0;
+}
+
+.servicio h3:first-of-type {
+    margin-bottom: 1rem;
+}
+
+
+/* Seccion:Mensaje */
+
+.mensaje h2 {
+    margin-bottom: .5rem;
+}
+
+.mensaje p {
+    text-align: justify;
+}
+
+.mensaje img {
+    margin: auto;
+    display: block;
+    align-content: center;
+}
+
+.mensaje h3 {
+    color: #ff9900;
+    text-align: center;
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+
+/* Main */
+
+.contenedor-tarjetas-carreras {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tarjeta-carreras {
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #B5B5B5;
+    background: #F5F5F5;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-carreras img {
+    height: 20rem;
+    width: 100%;
+}
+
+.tarjeta-carreras h3 {
+    text-align: center;
+}
+
+.ver-mas {
+    text-align: center;
+}
+
+.ver-mas a {
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
+
+.contenido-carrera img {
+    width: 8rem;
+    height: 8rem;
+}
+
+.contenido-carrera {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-carreras h4,
+p {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tarjeta-carreras p {
+    color: #ff9900;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* Section: Nuestros numeros*/
+
+.seccion-nuestros-datos {
+    background-color: #036606;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.seccion-nuestros-datos h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.seccion-nuestros-datos h2:first-of-type {
+    margin-bottom: 0;
+}
+
+.seccion-nuestros-datos h2:last-of-type {
+    margin-top: 0;
+}
+
+.nuestros-datos {
+    margin: 3rem 0rem 3rem 0rem;
+}
+
+.nuestros-datos h3,
+p {
+    text-align: center;
+    font-weight: 500;
+}
+
+.nuestros-datos h3 {
+    font-size: 3.3rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.nuestros-datos img {
+    width: 5rem;
+    height: 5rem;
+    display: block;
+    margin: auto;
+}
+
+
+/* Section:Servicios web */
+
+
+/* Footer */
+
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.site-footer p {
+    color: white;
+}
+
+.contenedor-footer {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    margin: 0;
+    color: #ffffff;
+}
