@@ -2,5 +2,12 @@
     "name": "underscore",
     "author": "Leo Intriago <ileosebastian@gmail.com>",
     "main": "index.html",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "export": "next export",
+        "deploy": "npm run build && npm run export",
+        "start": "next start"
+    },
     "version": "0.1.0"
 }
